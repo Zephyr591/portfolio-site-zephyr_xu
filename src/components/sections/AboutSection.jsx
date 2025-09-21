@@ -33,10 +33,10 @@ const AboutSection = () => {
                   loop={true}
                 />
               </div>
-              <h3 className="text-2xl font-bold text-white">About Zephyr</h3>
+              <h3 className="text-2xl font-bold text-white">About Me</h3>
             </div>
             <p className="text-white font-semibold mb-2">
-              Hello, I am {personalInfo.name}.
+              Hello, I am {personalInfo.name}, you also can call me Zephyr.
             </p>
             {}
             <p className="text-gray-400 text-sm">

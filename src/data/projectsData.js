@@ -128,7 +128,7 @@ export const contactData = [
 
 export const personalInfo = {
   name: "Sicheng Xu",
-  preferredName: "Zephyr Xu",
+  preferredName: "Sicheng Xu",
   title: "Graduate Software Developer",
   subtitle: "Master of IT Student at Monash University",
   location: "Melbourne, VIC, Australia",
