@@ -31,7 +31,7 @@ const ProjectCard = ({ project }) => {
             "Realtime S3 upload notifications with auto-tagging",
             "Cross-region object sync with Oracle Cloud",
             "Responsive React-based interface",
-            "CI/CD pipeline with GitHub Actions and Docker",
+            //"CI/CD pipeline with GitHub Actions and Docker",
           ],
           challenges:
             "Implemented a fully serverless, event-driven architecture to handle real-time file uploads, metadata updates, and cross-cloud redundancy. Successfully integrated AWS and Oracle services while maintaining performance and cost-efficiency.",
