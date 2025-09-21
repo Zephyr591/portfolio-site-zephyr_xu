@@ -23,36 +23,39 @@ const AboutSection = () => {
         {/* Cards Grid */}
         <div className="grid lg:grid-cols-3 md:grid-cols-2 gap-6">
           
-          {/* Hello Card */}
+          {/* About Me Card */}
           <div className="bg-slate-800/50 backdrop-blur-lg rounded-3xl p-8 border border-slate-700/50 hover:border-blue-500/50 transition-all duration-300 transform hover:scale-105">
-            <div className="mb-6">
-              <div className="w-20 h-20 bg-gradient-to-r from-blue-500 to-cyan-500 rounded-2xl flex items-center justify-center mb-4">
+            <div className="mb-6 flex items-center space-x-4">
+              <div className="w-16 h-16 bg-gradient-to-r from-blue-500 to-cyan-500 rounded-2xl flex items-center justify-center flex-shrink-0">
                 <Lottie 
                   animationData={developerAnimation} 
-                  style={{ width: 60, height: 60 }}
+                  style={{ width: 48, height: 48 }}
                   loop={true}
                 />
               </div>
+              <h3 className="text-2xl font-bold text-white">About Zephyr</h3>
             </div>
-            <h3 className="text-2xl font-bold text-white mb-4">Hello, I am Sicheng Xu (Zephyr)</h3>
-            <p className="text-gray-300 leading-relaxed">
-              Graduate Software Developer completing Master of IT at Monash University. 
-              Previously worked at a top-five securities firm in China, bringing unique perspective combining finance expertise with technical skills.
+            <p className="text-white font-semibold mb-2">
+              Hello, I am {personalInfo.name}.
+            </p>
+            {}
+            <p className="text-gray-400 text-sm">
+              Currently completing Master of IT at Monash University. Previously worked at a top-five securities firm in China, bringing unique perspective combining finance expertise with technical skills.
             </p>
           </div>
 
           {/* Tech Stack Card */}
           <div className="bg-slate-800/50 backdrop-blur-lg rounded-3xl p-8 border border-slate-700/50 hover:border-blue-500/50 transition-all duration-300 transform hover:scale-105">
-            <div className="mb-6">
-              <div className="w-20 h-20 bg-gradient-to-r from-green-500 to-blue-500 rounded-2xl flex items-center justify-center mb-4">
+            <div className="mb-6 flex items-center space-x-4">
+              <div className="w-16 h-16 bg-gradient-to-r from-green-500 to-blue-500 rounded-2xl flex items-center justify-center flex-shrink-0">
                 <Lottie 
                   animationData={codingAnimation} 
-                  style={{ width: 60, height: 60 }}
+                  style={{ width: 48, height: 48 }}
                   loop={true}
                 />
               </div>
+              <h3 className="text-2xl font-bold text-white">Tech Stack</h3>
             </div>
-            <h3 className="text-2xl font-bold text-white mb-4">Tech Stack</h3>
             <p className="text-gray-300 leading-relaxed mb-4">
               Skilled in Java, Python, and full-stack web development with Vue.js. Experienced with cloud infrastructure (AWS, Oracle Cloud) and modern DevOps practices.
             </p>
@@ -70,18 +73,18 @@ const AboutSection = () => {
 
           {/* Location Card */}
           <div className="bg-slate-800/50 backdrop-blur-lg rounded-3xl p-8 border border-slate-700/50 hover:border-blue-500/50 transition-all duration-300 transform hover:scale-105">
-            <div className="mb-6">
-              <div className="w-20 h-20 bg-gradient-to-r from-cyan-500 to-blue-500 rounded-2xl flex items-center justify-center mb-4">
+            <div className="mb-6 flex items-center space-x-4">
+              <div className="w-16 h-16 bg-gradient-to-r from-cyan-500 to-blue-500 rounded-2xl flex items-center justify-center flex-shrink-0">
                 <Lottie 
                   animationData={globeAnimation} 
-                  style={{ width: 60, height: 60 }}
+                  style={{ width: 48, height: 48 }}
                   loop={true}
                 />
               </div>
+              <h3 className="text-2xl font-bold text-white">Location</h3>
             </div>
-            <h3 className="text-2xl font-bold text-white mb-4">Location</h3>
-            <p className="text-gray-300 leading-relaxed mb-2">
-              <span className="text-white font-semibold">Based in Melbourne, Australia</span>
+            <p className="text-white font-semibold mb-2">
+              Based in {personalInfo.location}
             </p>
             <p className="text-gray-400 text-sm mb-3">
               Open to remote opportunities and willing to relocate globally for the right opportunity.
@@ -94,16 +97,16 @@ const AboutSection = () => {
 
           {/* Education Card */}
           <div className="bg-slate-800/50 backdrop-blur-lg rounded-3xl p-8 border border-slate-700/50 hover:border-blue-500/50 transition-all duration-300 transform hover:scale-105">
-            <div className="mb-6">
-              <div className="w-20 h-20 bg-gradient-to-r from-purple-500 to-pink-500 rounded-2xl flex items-center justify-center mb-4">
+            <div className="mb-6 flex items-center space-x-4">
+              <div className="w-16 h-16 bg-gradient-to-r from-purple-500 to-pink-500 rounded-2xl flex items-center justify-center flex-shrink-0">
                 <Lottie 
                   animationData={educationAnimation} 
-                  style={{ width: 60, height: 60 }}
+                  style={{ width: 48, height: 48 }}
                   loop={true}
                 />
               </div>
+              <h3 className="text-2xl font-bold text-white">Education</h3>
             </div>
-            <h3 className="text-2xl font-bold text-white mb-4">Education</h3>
             <div className="space-y-3 text-gray-300">
               <div>
                 <p className="font-semibold text-white">Monash University</p>
@@ -118,16 +121,16 @@ const AboutSection = () => {
 
           {/* Journey & Passion Card */}
           <div className="bg-slate-800/50 backdrop-blur-lg rounded-3xl p-8 border border-slate-700/50 hover:border-blue-500/50 transition-all duration-300 transform hover:scale-105">
-            <div className="mb-6">
-              <div className="w-20 h-20 bg-gradient-to-r from-orange-500 to-red-500 rounded-2xl flex items-center justify-center mb-4">
+            <div className="mb-6 flex items-center space-x-4">
+              <div className="w-16 h-16 bg-gradient-to-r from-orange-500 to-red-500 rounded-2xl flex items-center justify-center flex-shrink-0">
                 <Lottie 
                   animationData={rocketAnimation} 
-                  style={{ width: 60, height: 60 }}
+                  style={{ width: 48, height: 48 }}
                   loop={true}
                 />
               </div>
+              <h3 className="text-2xl font-bold text-white">My Journey</h3>
             </div>
-            <h3 className="text-2xl font-bold text-white mb-4">My Journey</h3>
             <p className="text-gray-300 leading-relaxed">
               My transition from finance to technology was driven by a desire to build tools that make financial systems more reliable and accessible. 
               I'm passionate about connecting technical expertise with real-world business needs and solving complex problems through innovative solutions.
@@ -136,21 +139,21 @@ const AboutSection = () => {
 
           {/* Contact Card */}
           <div className="bg-slate-800/50 backdrop-blur-lg rounded-3xl p-8 border border-slate-700/50 hover:border-blue-500/50 transition-all duration-300 transform hover:scale-105">
-            <div className="mb-6">
-              <div className="w-20 h-20 bg-gradient-to-r from-indigo-500 to-purple-500 rounded-2xl flex items-center justify-center mb-4">
+            <div className="mb-6 flex items-center space-x-4">
+              <div className="w-16 h-16 bg-gradient-to-r from-indigo-500 to-purple-500 rounded-2xl flex items-center justify-center flex-shrink-0">
                 <Lottie 
                   animationData={emailAnimation} 
-                  style={{ width: 60, height: 60 }}
+                  style={{ width: 48, height: 48 }}
                   loop={true}
                 />
               </div>
+              <h3 className="text-2xl font-bold text-white">
+                Contact me 
+                <span className="inline-flex items-center ml-2">
+                  <div className="w-3 h-3 bg-green-400 rounded-full animate-pulse"></div>
+                </span>
+              </h3>
             </div>
-            <h3 className="text-2xl font-bold text-white mb-4">
-              Contact me 
-              <span className="inline-flex items-center ml-2">
-                <div className="w-3 h-3 bg-green-400 rounded-full animate-pulse"></div>
-              </span>
-            </h3>
             <div className="space-y-3">
               <a 
                 href="mailto:xusc591@gmail.com"

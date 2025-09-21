@@ -12,7 +12,7 @@ const ProjectsSection = () => {
           <span className="bg-gradient-to-r from-blue-400 to-cyan-400 bg-clip-text text-transparent">Projects</span>
         </h2>
         
-        <div className="grid md:grid-cols-2 gap-8">
+        <div className="space-y-6">
           {projectsData.map((project, index) => (
             <ProjectCard 
               key={project.id}
