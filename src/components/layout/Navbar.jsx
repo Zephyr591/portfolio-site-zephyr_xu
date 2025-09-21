@@ -22,10 +22,20 @@ const Navbar = () => {
   return (
     <nav className="fixed top-0 w-full z-40 bg-slate-900/80 backdrop-blur-lg border-b border-slate-700/50">
       <div className="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
-        {/* Logo */}
-        <div className="text-2xl font-bold bg-gradient-to-r from-blue-400 to-cyan-400 bg-clip-text text-transparent">
-          Zephyr Xu
-        </div>
+        {/* Logo + Name */}
+        <button 
+          onClick={() => handleNavClick('home')}
+          className="flex items-center space-x-3 focus:outline-none"
+        >
+          <img 
+            src="/favicon-ZX-64x64.png" 
+            alt="Logo" 
+            className="w-8 h-8"
+          />
+          <span className="text-2xl font-bold bg-gradient-to-r from-blue-400 to-cyan-400 bg-clip-text text-transparent">
+            Zephyr Xu
+          </span>
+        </button>
         
         {/* Desktop Navigation */}
         <div className="hidden md:flex space-x-8">
