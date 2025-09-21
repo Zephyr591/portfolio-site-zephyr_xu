@@ -3,13 +3,20 @@
 export const projectsData = [
   {
     id: 1,
-    title: "📱 Android App (Kotlin)",
-    description: "Mobile application built with Kotlin and Jetpack Compose, featuring modern UI design and local data management.",
-    tech: ["Kotlin", "Android", "Jetpack Compose", "Firebase"],
+    title: "📱 VolunTrack - Android Volunteer Tracking App",
+    description: "A comprehensive volunteer tracking mobile application built with Kotlin and Jetpack Compose. Features Google Authentication, Firebase integration, personalized event recommendations based on Google Calendar analysis, progress tracking with visual charts, and a modern Material Design UI with dark/light mode support.",
+    tech: ["Kotlin", "Android", "Jetpack Compose", "Firebase", "Google Authentication", "Google Calendar API", "Room Database", "Retrofit", "Material Design"],
     color: "from-green-500 to-teal-500",
     projectUrl: "#",
-    githubUrl: "https://github.com/Zephyr591"
+    githubUrl: "https://github.com/ellielok/VolunTrack",
+    screenshots: [
+      "/images/projects/voluntrack-welcome.png",
+      "/images/projects/voluntrack-home.png", 
+      "/images/projects/voluntrack-dashboard.png",
+      "/images/projects/voluntrack-darkmode.png"
+    ]
   },
+  // ... rest of your projects remain unchanged
   {
     id: 2,
     title: "☁️ Cloud Infrastructure Project", 
@@ -39,6 +46,7 @@ export const projectsData = [
   }
 ];
 
+// Rest of your exports remain unchanged
 export const skillsData = [
   { name: 'Java', level: 90 },
   { name: 'Python', level: 90 },
@@ -67,7 +75,7 @@ export const contactData = [
 
 export const personalInfo = {
   name: "Sicheng Xu",
-  preferredName: "Zephyr",
+  preferredName: "Zephyr Xu",
   title: "Graduate Software Developer",
   subtitle: "Master of IT Student at Monash University",
   location: "Melbourne, VIC, Australia",
